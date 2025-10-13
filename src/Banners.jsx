@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import './Banners.css'
 
@@ -8,17 +7,29 @@ function Header() {
   return (
     <>
       <div className="Banner">
-        <div className="logo">
-            <img src="assets/lunaries_logo.png" id= "logo-icon"/>
-            <h1>lunaries prints</h1>
-        </div>
+        <header>
+          <div className="title-logo">
+            <button onClick={() => window.location.href = 'index.html'}>
+              <img src="assets/images/icons/lunaries.png" alt="Logo" />
+              <h1>lunaries prints</h1>
+            </button>
 
-        <nav>
-            <a href="#">shop</a>
-            <a href="#">about</a>
-            <a href="#">contact</a>
-        </nav>       
+            <nav className="user-options">
+              <a href="sign_in.html">registrate</a>
+              <a href="log_in.html">inicia sesión</a>
+              <button onClick={() => window.location.href = 'cart.html'}>
+                <img src="assets/images/icons/cart.png" alt="Cart" />
+              </button>
+            </nav>
+          </div>
 
+          <nav className="nav-menu">
+            <a href="index.html">inicio</a>
+            <a href="all_products.html">productos</a>
+            <a href="blogs.html">blogs</a>
+            <a href="about.html">sobre nosotros</a>
+          </nav>
+        </header>
       </div>
     </>
   )

@@ -3,5 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --primary-color: aliceblue;
+}
+
+body {
+  background-color: --primary-color;
 }
 
