@@ -1,7 +1,61 @@
-.banner {
-    height:230px;
-    background-color: #f7f7f7;
+
+
+
+header {
+    margin-bottom: 20px;
+    padding:1.2rem 2rem;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+}
+
+.title-logo {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title-logo button img {
+    height: 60px;
+    width: auto;ss
     
+}
+
+.title-logo h1{
+    font-size: 25px;
+}
+
+.title-logo button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.5rem;
+    background: none;
+    border: none;
+}
+
+.user-options{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    
+}
+
+
+.user-options a{
+    background-color: var(--primary-color);    
+    padding:5px 10px;
+    border-radius: 10px;
+}
+
+
+.user-options button img{
+    height: 20px;
+    width: auto;
+}
+
+.nav-menu {
+    margin-top:15px;
+    display: flex;
+    justify-content: space-between;
 }
