@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 import './App.css'
-import './Banners.jsx'
-
+import Header from './Banners.jsx'
+s
 function App() {
   const [count, setCount] = useState(0)
 
