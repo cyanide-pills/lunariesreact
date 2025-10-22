@@ -1,38 +1,41 @@
-import { useState } from 'react'
-import './Banners.css'
+import { Dropdown } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Banners.css';
 
 function Header() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div className="Banner">
-        <header>
-          <div className="title-logo">
-            <button onClick={() => window.location.href = 'index.html'}>
-              <img src="assets/images/icons/lunaries.png" alt="Logo" />
-              <h1>lunaries prints</h1>
-            </button>
+    <div className="Banner">
+      <header>
+        <div className="title-logo">
+          <button onClick={() => (window.location.href = 'index.html')}>
+            <h1>lunaries prints</h1>
+          </button>
+        </div>
 
-            <nav className="user-options">
-              <a href="sign_in.html">registrate</a>
-              <a href="log_in.html">inicia sesión</a>
-              <button onClick={() => window.location.href = 'cart.html'}>
-                <img src="assets/images/icons/cart.png" alt="Cart" />
-              </button>
-            </nav>
-          </div>
+        <nav className="nav-menu">
+          <a href="index.html">inicio</a>
+          <a href="all_products.html">productos</a>
+          <a href="blogs.html">blogs</a>
+          <a href="about.html">sobre nosotros</a>
+        </nav>
+        
+        <nav className="user-options">
+          <Dropdown>
+            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+              Opciones
+            </Dropdown.Toggle>
 
-          <nav className="nav-menu">
-            <a href="index.html">inicio</a>
-            <a href="all_products.html">productos</a>
-            <a href="blogs.html">blogs</a>
-            <a href="about.html">sobre nosotros</a>
-          </nav>
-        </header>
-      </div>
-    </>
-  )
+            <Dropdown.Menu>
+              <Dropdown.Item href="#">Iniciar Sesión</Dropdown.Item>
+              <Dropdown.Item href="#">Registrarse</Dropdown.Item>
+              <Dropdown.Item href="#">Perfil</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </nav>
+
+      </header>
+    </div>
+  );
 }
 
-export default Header
+export default Header;

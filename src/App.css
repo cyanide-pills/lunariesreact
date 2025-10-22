@@ -1,12 +1,13 @@
-#root {
-  width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  --primary-color: aliceblue;
+:root {
+  --primary-color: rgb(195, 216, 236);
 }
 
 body {
-  background-color: --primary-color;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
+
+
 
