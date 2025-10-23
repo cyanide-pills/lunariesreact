@@ -1,11 +1,13 @@
 :root {
-  --primary-color: rgb(195, 216, 236);
+  --primary-color: rgb(238, 232, 225);
+  --secondary-color: rgb(58, 53, 52);
+
 }
 
 body {
   background-color: var(--primary-color);
-  margin: 0 auto;
-  display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
 }
 

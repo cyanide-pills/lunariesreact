@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import './MainLayout.css'
-import Header from './Banners.jsx'
+import { Outlet } from 'react-router-dom';
+import Header from './Banners.jsx';
+import './MainLayout.css';
 
 function MainLayout() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="main">
       <Header />
+      <main className="content">
+        <Outlet /> 
+      </main>
     </div>
-  )
+  );
 }
 
-export default MainLayout
+export default MainLayout;

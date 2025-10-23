@@ -1,0 +1,19 @@
+#Welcome{
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Showcase-Display{
+    width:80%;
+    height: 30vh;
+    box-sizing: border-box;
+    height: 30vh;
+    background-color: var(--secondary-color);
+
+}
+
+.Display-Text{
+    color: white;
+}

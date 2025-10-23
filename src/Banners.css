@@ -1,11 +1,37 @@
 
+.banner{
+    width:100%;
+    box-sizing: border-box;
+}
 
 header {
-    margin-bottom: 20px;
-    padding:1.2rem 2rem;
+
+    padding:1rem 2rem;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-template-columns: 1fr 6fr 1fr;
+    background-color: var(--secondary-color);
+    gap: 2rem;
+    margin-bottom: 3rem;
+} 
+
+h1{
+    color: white;
+    font-family: 'Playfair Display';
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: skewX(-10deg); 
+    font-size: 2.2rem;
+
+}
+
+a, p {    
+    color: white;
+    text-decoration: none;
+    font-family: 'Karla';
 }
 
 .title-logo {
@@ -20,9 +46,6 @@ header {
     
 }
 
-.title-logo h1{
-    font-size: 25px;
-}
 
 .title-logo button{
     display: flex;
@@ -33,28 +56,10 @@ header {
     border: none;
 }
 
-.user-options{
-    display: flex;
-    gap:1rem;
-    align-items: center;
-    
-}
-
-
-.user-options a{
-    background-color: var(--primary-color);    
-    padding:5px 10px;
-    border-radius: 10px;
-}
-
-
-.user-options button img{
-    height: 20px;
-    width: auto;
-}
 
 .nav-menu {
     margin-top:15px;
     display: flex;
     justify-content: space-between;
+    gap: 5rem;
 }

@@ -1,6 +1,8 @@
 import { Dropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Banners.css';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
   return (
@@ -8,15 +10,18 @@ function Header() {
       <header>
         <div className="title-logo">
           <button onClick={() => (window.location.href = 'index.html')}>
-            <h1>lunaries prints</h1>
+            <h1>lunaries</h1>
           </button>
         </div>
 
         <nav className="nav-menu">
-          <a href="index.html">inicio</a>
-          <a href="all_products.html">productos</a>
-          <a href="blogs.html">blogs</a>
-          <a href="about.html">sobre nosotros</a>
+          <Link to="/">inicio</Link>
+          <p>|</p>
+          <Link to="/products">productos</Link>
+          <p>|</p>
+          <Link to="/blogs">blogs</Link>
+          <p>|</p>
+          <Link to="/about">sobre nosotros</Link>
         </nav>
         
         <nav className="user-options">

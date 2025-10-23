@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './Banners.jsx'
-import MainLayout from './MainLayout.jsx'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MainLayout from './MainLayout.jsx';
+import Welcome from './pages/Welcome.jsx';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <MainLayout />
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Welcome />} /> 
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
