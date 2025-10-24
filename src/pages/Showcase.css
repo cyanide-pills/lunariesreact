@@ -1,19 +1,46 @@
 #Welcome{
     background-color: var(--primary-color);
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .Showcase-Display{
-    width:80%;
-    height: 30vh;
+    width:100%;
+    height: 40vh;
     box-sizing: border-box;
-    height: 30vh;
     background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 }
 
+.Display {
+    width: 85%;
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
 .Display-Text{
-    color: white;
+    color:var(--primary-color);
+    padding: 5rem 5rem;
+    width: 40vw;
+}
+
+.Display-Image{
+    display: block;
+    object-fit: contain;
+}
+
+.Display-Image img{
+    width: 60vw;
+    position: relative;
+    bottom:130px
 }
