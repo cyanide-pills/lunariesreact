@@ -9,18 +9,19 @@
 
 .Showcase-Display{
     width:100%;
-    height: 40vh;
+    height: 50vh;
     box-sizing: border-box;
     background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
 
 }
 
 .Display {
     width: 85%;
+    height: 90%;
     background-color: var(--tertiary-color);
     display: flex;
     flex-direction: row;
@@ -42,5 +43,5 @@
 .Display-Image img{
     width: 60vw;
     position: relative;
-    bottom:130px
+    bottom:130px;
 }
